@@ -3,21 +3,20 @@
 
 :root {
     /* Set base tones */
-    --base: #100F0F; 
-    --paper: #FFFCF0;
-    --bg-2: 5%;
-    --ui: 10%;
-    --ui-2: 15%;
-    --ui-3: 20%;
-    --tx-3: 30%;
-    --tx-2: 60%;
-    --dark-bg-2: 95%;
-    --dark-ui: 90%;
-    --dark-ui-2: 85%;
-    --dark-ui-3: 80%;
-    --dark-tx-3: 70%;
-    --dark-tx-2: 50%;
-    --dark-tx: 20%;
+    --base: #100F0F;        /* tx, dark bg */
+    --base-950: #1C1B1A;    /* dark bg2 */
+    --base-900: #282726;    /* dark ui */
+    --base-850: #343331;    /* dark ui2 */
+    --base-800: #403E3C;    /* dark ui3 */
+    --base-700: #575653;    /* dark tx3 */
+    --base-600: #6F6E69;    /* tx2 */
+    --base-500: #878580;    /* dark tx2 */
+    --base-300: #B7B5AC;    /* tx3 */
+    --base-200: #CECDC3;    /* ui3, dark tx */
+    --base-150: #DAD8CE;    /* ui2 */
+    --base-100: #E6E4D9;    /* ui */
+    --base-50: #F2F0E5;     /* bg2 */
+    --paper: #FFFCF0;       /* bg */
 
     /* Set light theme accent colors */
     --re: #AF3029;
@@ -43,38 +42,29 @@
 
 /*   ===== GENERAL =====   */
 
-.rn-clr-background {background-color: hotpink;}
-
 .rn-clr-background-primary {background-color: var(--paper);}
 
-.rn-clr-background-secondary {
-    background-color: var(--base);
-    opacity: var(--bg-2);
-}
+.rn-clr-background-secondary {background-color: var(--base-50)}
 
-.rn-clr-background-accent {
-    background-color: var(--base);
-    opacity: var(--ui-3);
-}
+.rn-clr-background-accent {background-color: var(--base-200);}
 
-.rn-clr-background-light-accent {
-    background-color: var(--base);
-    opacity: var(--ui-2);
-}
-
-.rn-clr-background-elevation-10 {
-    background-color: var(--base);
-    opacity: var(--ui);
-}
+.rn-clr-background-light-accent {background-color: var(--base-150);}
 
 .rn-clr-content-primary {color: var(--base);}
 
-.rn-clr-content-secondary {
-    color: var(--base);
-    opacity: var(--tx-2);
-}
+.rn-clr-content-secondary {color: var(--base-600);}
 
-.rn-clr-content-accent {
-    color: var(--base);
-    opacity: var(--tx-3);
-}
+.rn-clr-content-accent {color: var(--base-300);}
+
+
+
+/*   ===== SIDEBAR =====   */
+
+
+/*   ===== DOCUMENTS =====   */
+
+
+/*   ===== EDITOR =====   */
+
+
+/*   ===== QUEUE =====   */
