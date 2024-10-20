@@ -1,6 +1,10 @@
 /* Theme colors based on https://www.stephango.com/flexoki  */
 
 
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap');
+
+
 :root {
     /* Set base tones */
     --base: #100F0F;        /* tx, dark bg */
@@ -83,12 +87,51 @@
 /*   ===== EDITOR =====   */
 
 
-.rn-editor_rem_body {
+.rn-editor__rem__body__text {
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-size: 1.2rem;
+    font-weight: normal;
+    font-style: normal;
     color: var(--base);
-
+    line-height: 1.6rem;
 }
 
+
+/*   ----- Headings -----   */
+
+.rn-editor__rem__body__text--h1 {
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-size: 1.6rem;
+    font-weight: bold;
+    font-style: normal;
+}
+
+.rn-editor__rem__body__text--h2 {
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-size: 1.4rem;
+    font-weight: bold;
+    font-style: normal;
+}
+
+.rn-editor__rem__body__text--h3 {
+    font-family: "Montserrat", sans-serif;
+    font-size: 1.2rem;
+    font-weight: bold;
+    font-style: normal;
+}
+
+
 /*   ----- Highlighting -----   */
+
+.rn-editor__rem__body--red {background-color: var(--re-dk);}
+.rn-editor__rem__body--orange {background-color: Var(--or-dk);} 
+.rn-editor__rem__body--yellow {background-color: var(--ye-dk);}
+.rn-editor__rem__body--green {background-color: var(--gr-dk);}
+.rn-editor__rem__body--blue {background-color: var(--bl-dk);}
+.rn-editor__rem__body--purple {background-color: var(--pu-dk);}
 
 
 
