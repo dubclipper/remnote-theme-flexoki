@@ -54,17 +54,42 @@
 
 .rn-clr-content-secondary {color: var(--base-600);}
 
-.rn-clr-content-accent {color: var(--base-300);}
+.rn-clr-content-tertiary {color: var(--base-300);}
+
+.rn-clr-content-accent {color: var(--ma);}
 
 
 
 /*   ===== SIDEBAR =====   */
 
 
+.rn-sidebar-add-button {
+    color: var(--or);
+}
+
+.rn-sidebar-add-button:hover {
+    border: 0.25em solid var(--base-150);
+}
+
+.rn-sidebar-counter {
+    color: var(--pu);
+} 
+
+
+
 /*   ===== DOCUMENTS =====   */
 
 
 /*   ===== EDITOR =====   */
+
+
+.rn-editor_rem_body {
+    color: var(--base);
+
+}
+
+/*   ----- Highlighting -----   */
+
 
 
 /*   ===== QUEUE =====   */
