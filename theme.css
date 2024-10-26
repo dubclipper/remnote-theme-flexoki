@@ -3,6 +3,7 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair:ital,opsz,wght@0,5..1200,300..900;1,5..1200,300..900&display=swap');
 
 
 :root {
@@ -44,28 +45,96 @@
 }
 
 
-/*   ===== GENERAL =====   */
+/*     ===== GENERAL =====     */
+
+/*     ----- Backgrounds -----     */
 
 .rn-clr-background-primary {background-color: var(--paper);}
+.dark .rn-clr-background-primary {background-color: var(--base);}
 
-.rn-clr-background-secondary {background-color: var(--base-50)}
+.rn-clr-background-secondary, 
+.rn-clr-background-tertiary {background-color: var(--base-50)}
 
-.rn-clr-background-accent {background-color: var(--base-200);}
+.dark .rn-clr-background-secondary, 
+.rn-clr-background-tertiary {background-color: var(--base-950)}
+
+.rn-clr-background-accent,
+.rn-clr-background-overlay-light {background-color: var(--base-200);}
+.dark .rn-clr-background-accent,
+.rn-clr-background-overlay-dark {background-color: var(--base-800);}
 
 .rn-clr-background-light-accent {background-color: var(--base-150);}
+.dark .rn-clr-background-light-accent {background-color: var(--base-850);}
+
+
+
+
+.rn-clr-background-inverse-primary,
+.rn-clr-background-inverse-secondary,
+.rn-clr-background-negative,
+.rn-clr-background-positive,
+.rn-clr-background-light-positive,
+.rn-clr-background-light-negative,
+.rn-clr-background-light-warning,
+.rn-clr-background-warning,
+.rn-clr-background-state-disabled,
+.rn-clr-background-always-dark,
+.rn-clr-background-always-light,
+.rn-clr-background-elevation-5,
+.rn-clr-background-elevation-10,
+.rn-clr-background-elevation-15,
+.rn-clr-background-elevation-20,
+.rn-clr-background-elevation-30,
+.rn-clr-background-elevation-40,
+.rn-clr-background-elevation-50,
+.rn-clr-background-elevation-60,
+.rn-clr-background-elevation-70,
+.rn-clr-background-elevation-80,
+.rn-clr-background-elevation-90,
+.rn-clr-background-elevation-100,
+.rn-clr-background-logo-color {background-color: hotpink;}
+
+
+/*     ----- Content -----     */
 
 .rn-clr-content-primary {color: var(--base);}
+.dark .rn-clr-content-primary {color: var(--base-200);}
 
 .rn-clr-content-secondary {color: var(--base-600);}
+.dark .rn-clr-content-secondary {color: var(--base-500);}
 
 .rn-clr-content-tertiary {color: var(--base-300);}
+.dark .rn-clr-content-tertiary {color: var(--base-700);}
 
-.rn-clr-content-accent {color: var(--ma);}
+.rn-clr-content-accent,
+.rn-clr-content-on-color,
+.rn-clr-content-on-color-inverse,
+.rn-clr-content-inverse-primary,
+.rn-clr-content-inverse-secondary,
+.rn-clr-content-inverse-tertiary,
+.rn-clr-content-warning,
+.rn-clr-content-negative,
+.rn-clr-content-positive,
+.rn-clr-content-state-disabled,
+.rn-clr-content-state-warning,
+.rn-clr-content-logo-color,
+.rn-clr-content-second {color: lime}
+
+
+/*     ----- Borders -----     */
+
+
+/*     ----- Shadows -----     */
 
 
 
-/*   ===== SIDEBAR =====   */
 
+/*     ===== SIDEBAR =====     */
+
+
+.rn-sidebar {
+    border-right: 0.5rem solid var(--base-100);
+}
 
 .rn-sidebar-add-button {
     color: var(--or);
@@ -81,11 +150,17 @@
 
 
 
-/*   ===== DOCUMENTS =====   */
+/*     ===== DOCUMENTS =====     */
+
+.rn-doc-title {
+    font-family: "Playfair", serif;
+    font-weight: normal;
+    font-style: normal;
+}
 
 
-/*   ===== EDITOR =====   */
 
+/*     ===== EDITOR =====     */
 
 .rn-editor__rem__body__text {
     font-family: "Montserrat", sans-serif;
@@ -97,28 +172,36 @@
     line-height: 1.6rem;
 }
 
+.rn-rem-reference {
+    color: var(--cy);
+} 
+
+.rn-quote-content {
+    border-left: 4px solid var(--gr);
+    background-color: var(--base-150);
+}
+
 
 /*   ----- Headings -----   */
 
 .rn-editor__rem__body__text--h1 {
-    font-family: "Montserrat", sans-serif;
-    font-optical-sizing: auto;
-    font-size: 1.6rem;
-    font-weight: bold;
+    font-family: "Karla", sans-serif;
+    font-size: 1.8rem;
+    font-weight: normal;
     font-style: normal;
 }
 
 .rn-editor__rem__body__text--h2 {
-    font-family: "Montserrat", sans-serif;
+    font-family: "Karla", sans-serif;
     font-optical-sizing: auto;
-    font-size: 1.4rem;
-    font-weight: bold;
+    font-size: 1.5rem;
+    font-weight: normal;
     font-style: normal;
 }
 
 .rn-editor__rem__body__text--h3 {
-    font-family: "Montserrat", sans-serif;
-    font-size: 1.2rem;
+    font-family: "Karla", sans-serif;
+    font-size: 1.3rem;
     font-weight: bold;
     font-style: normal;
 }
@@ -133,6 +216,11 @@
 .rn-editor__rem__body--blue {background-color: var(--bl-dk);}
 .rn-editor__rem__body--purple {background-color: var(--pu-dk);}
 
+.dark .rn-editor__rem__body--orange {background-color: Var(--or);} 
+.dark .rn-editor__rem__body--red {background-color: var(--re);}
+.dark .rn-editor__rem__body--yellow {background-color: var(--ye);}
+.dark .rn-editor__rem__body--green {background-color: var(--gr);}
+.dark .rn-editor__rem__body--blue {background-color: var(--bl);}
+.dark .rn-editor__rem__body--purple {background-color: var(--pu);}
 
-
-/*   ===== QUEUE =====   */
+/*     ===== QUEUE =====     */
