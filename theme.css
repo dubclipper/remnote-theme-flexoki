@@ -4,7 +4,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Playfair:ital,opsz,wght@0,5..1200,300..900;1,5..1200,300..900&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Montaga&display=swap');
 
 :root {
     /* Set base tones */
@@ -66,10 +66,22 @@
 .rn-clr-background-light-accent {background-color: var(--base-150);}
 .dark .rn-clr-background-light-accent {background-color: var(--base-850);}
 
+.rn-clr-background-inverse-primary {background-color: var(--base-900);}
+
+.rn-clr-background-elevation-5 {background-color: var(--base-50);} 
+.rn-clr-background-elevation-10 {background-color: var(--base-100);}
+.rn-clr-background-elevation-15 {background-color: var(--base-150);}
+.rn-clr-background-elevation-20 {background-color: var(--base-200);}
+.rn-clr-background-elevation-30 {background-color: var(--base-300);}
+.rn-clr-background-elevation-40,
+.rn-clr-background-elevation-50 {background-color: var(--base-500);}
+.rn-clr-background-elevation-60 {background-color: var(--base-600);}
+.rn-clr-background-elevation-70 {background-color: var(--base-700);}
+.rn-clr-background-elevation-80 {background-color: var(--base-800);}
+.rn-clr-background-elevation-90 {background-color: var(--base-850);}
+.rn-clr-background-elevation-100 {background-color: var(--base-900);}
 
 
-
-.rn-clr-background-inverse-primary,
 .rn-clr-background-inverse-secondary,
 .rn-clr-background-negative,
 .rn-clr-background-positive,
@@ -80,18 +92,6 @@
 .rn-clr-background-state-disabled,
 .rn-clr-background-always-dark,
 .rn-clr-background-always-light,
-.rn-clr-background-elevation-5,
-.rn-clr-background-elevation-10,
-.rn-clr-background-elevation-15,
-.rn-clr-background-elevation-20,
-.rn-clr-background-elevation-30,
-.rn-clr-background-elevation-40,
-.rn-clr-background-elevation-50,
-.rn-clr-background-elevation-60,
-.rn-clr-background-elevation-70,
-.rn-clr-background-elevation-80,
-.rn-clr-background-elevation-90,
-.rn-clr-background-elevation-100,
 .rn-clr-background-logo-color {background-color: hotpink;}
 
 
@@ -106,7 +106,9 @@
 .rn-clr-content-tertiary {color: var(--base-300);}
 .dark .rn-clr-content-tertiary {color: var(--base-700);}
 
-.rn-clr-content-accent,
+.rn-clr-content-accent {color: var(--base-200);}
+
+
 .rn-clr-content-on-color,
 .rn-clr-content-on-color-inverse,
 .rn-clr-content-inverse-primary,
@@ -126,7 +128,8 @@
 
 /*     ----- Shadows -----     */
 
-
+.rn-clr-shadow-menu {background-color: var(--base-50);} 
+.dark .rn-clr-shadow-menu {background-color: var(--base-950);} 
 
 
 /*     ===== SIDEBAR =====     */
@@ -174,12 +177,21 @@
 
 .rn-rem-reference {
     color: var(--cy);
+    font-weight: 450;
 } 
 
+.rn-editor__rem__body--todo-finished {text-decoration: none;}
+
+
+/*   ----- Block Quote -----   */
+
 .rn-quote-content {
-    border-left: 4px solid var(--gr);
+    border-left: 0.5rem solid var(--gr);
     background-color: var(--base-150);
-}
+    padding: 1em 3em 1em;
+    }
+
+.rn-quote-inner {font-family: "Montaga", serif;}
 
 
 /*   ----- Headings -----   */
