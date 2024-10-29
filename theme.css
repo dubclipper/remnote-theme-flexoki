@@ -6,8 +6,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Playfair:ital,opsz,wght@0,5..1200,300..900;1,5..1200,300..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montaga&display=swap');
 
+
 :root {
-    /* Set base tones */
+    /*  Set base tones  */
     --base: #100F0F;        /* tx, dark bg */
     --base-950: #1C1B1A;    /* dark bg2 */
     --base-900: #282726;    /* dark ui */
@@ -23,7 +24,7 @@
     --base-50: #F2F0E5;     /* bg2 */
     --paper: #FFFCF0;       /* bg */
 
-    /* Set light theme accent colors */
+    /*   Set light theme accent colors   */
     --re: #AF3029;
     --or: #BC5215;
     --ye: #AD8301;
@@ -33,7 +34,7 @@
     --pu: #5E409D;
     --ma: #A02F6F;
 
-    /* Set dark theme accent colors */
+    /*   Set dark theme accent colors    */
     --re-dk: #D14D41;
     --or-dk: #DA702C;
     --ye-dk: #D0A215;
@@ -45,7 +46,9 @@
 }
 
 
-/*     ===== GENERAL =====     */
+
+/*      ===== GENERAL =====       */
+
 
 /*     ----- Backgrounds -----     */
 
@@ -68,6 +71,12 @@
 
 .rn-clr-background-inverse-primary {background-color: var(--base-900);}
 
+.rn-clr-background-inverse-secondary {background-color: var(--base-850);}
+
+.rn-clr-background-warning {background-color: var(--or);}
+
+.rn-clr-background-light-warning {background-color: var(--ye);}
+
 .rn-clr-background-elevation-5 {background-color: var(--base-50);} 
 .rn-clr-background-elevation-10 {background-color: var(--base-100);}
 .rn-clr-background-elevation-15 {background-color: var(--base-150);}
@@ -82,21 +91,20 @@
 .rn-clr-background-elevation-100 {background-color: var(--base-900);}
 
 
-.rn-clr-background-inverse-secondary,
+
 .rn-clr-background-negative,
 .rn-clr-background-positive,
 .rn-clr-background-light-positive,
 .rn-clr-background-light-negative,
-.rn-clr-background-light-warning,
-.rn-clr-background-warning,
 .rn-clr-background-state-disabled,
 .rn-clr-background-always-dark,
 .rn-clr-background-always-light,
-.rn-clr-background-logo-color {background-color: hotpink;}
+.rn-clr-background-logo-color {background-color: lime;}
 
 
 /*     ----- Content -----     */
 
+.rn-clr-content-on-color,
 .rn-clr-content-primary {color: var(--base);}
 .dark .rn-clr-content-primary {color: var(--base-200);}
 
@@ -106,30 +114,68 @@
 .rn-clr-content-tertiary {color: var(--base-300);}
 .dark .rn-clr-content-tertiary {color: var(--base-700);}
 
+.rn-clr-content-on-color-inverse,
 .rn-clr-content-accent {color: var(--base-200);}
 
+.rn-clr-content-inverse-primary {color: var(--base-200);}
 
-.rn-clr-content-on-color,
-.rn-clr-content-on-color-inverse,
-.rn-clr-content-inverse-primary,
-.rn-clr-content-inverse-secondary,
-.rn-clr-content-inverse-tertiary,
-.rn-clr-content-warning,
+.rn-clr-content-inverse-secondary {color: var(--base-500);}
+
+.rn-clr-content-inverse-tertiary {color: var(--base-700);}
+
+.rn-clr-content-warning {color: var(--or);}
+
+.rn-clr-content-state-disabled {color: var(--bl);}
+
+.rn-clr-content-state-warning {color: var(--re);}
+
 .rn-clr-content-negative,
 .rn-clr-content-positive,
-.rn-clr-content-state-disabled,
-.rn-clr-content-state-warning,
 .rn-clr-content-logo-color,
-.rn-clr-content-second {color: lime}
+.rn-clr-content-second {color: hotpink}
 
 
 /*     ----- Borders -----     */
 
+.rn-clr-border-selected,
+.rn-clr-border-opaque,
+.rn-clr-border-warning {border: solid 0.2rem var(--base-200);}
+
+.rn-clr-border-state-disabled,
+.rn-clr-border-accent {border: solid 0.1rem var(--base-150);}
+
+.rn-clr-border-light-accent,
+.rn-clr-border-accent-light {border: solid 0.1rem var(--base-100);}
+
+
+.rn-clr-border-positive,
+.rn-clr-border-negative {border: dotted 0.5rem hotpink;}   /* Change when you know where these elements actually used */
+
+.rn-clr-border-inverse-opaque,
+.rn-clr-border-inverse-selected {border: solid 0.2rem var(--base-800);}
+
 
 /*     ----- Shadows -----     */
 
-.rn-clr-shadow-menu {background-color: var(--base-50);} 
-.dark .rn-clr-shadow-menu {background-color: var(--base-950);} 
+.rn-clr-shadow-default,
+.rn-clr-shadow-modal,
+.rn-clr-shadow-menu {background-color: var(--base-100);} 
+.dark .rn-clr-shadow-menu {background-color: var(--base-900);} 
+
+.rn-clr-shadow-close-keyboard-menu,
+.rn-clr-shadow-card {background-color: var(--base-150);}
+.dark .rn-clr-shadow-card {background-color: var(--base-850);}
+
+.rn-clr-shadow-menu {background-color: var(--base-200);}
+.dark .rn-clr-shadow-menu {background-color: var(--base-800);}
+
+.rn-clr-shadow-elevation-5 {background-color: var(--base-50);}
+.rn-clr-shadow-elevation-10 {background-color: var(--base-100);}
+.rn-clr-shadow-elevation-15 {background-color: var(--base-150);}
+.rn-clr-shadow-elevation-20 {background-color: var(--base-200);}
+.rn-clr-shadow-elevation-30 {background-color: var(--base-300);}
+.rn-clr-shadow-elevation-40 {background-color: var(--base-400);}
+.rn-clr-shadow-elevation-50 {background-color: var(--base-500);}
 
 
 /*     ===== SIDEBAR =====     */
@@ -183,7 +229,7 @@
 .rn-editor__rem__body--todo-finished {text-decoration: none;}
 
 
-/*   ----- Block Quote -----   */
+/*      ----- Block Quote -----     */
 
 .rn-quote-content {
     border-left: 0.5rem solid var(--gr);
@@ -194,7 +240,7 @@
 .rn-quote-inner {font-family: "Montaga", serif;}
 
 
-/*   ----- Headings -----   */
+/*      ----- Headings -----        */
 
 .rn-editor__rem__body__text--h1 {
     font-family: "Karla", sans-serif;
@@ -219,7 +265,7 @@
 }
 
 
-/*   ----- Highlighting -----   */
+/*      ----- Highlighting -----     */
 
 .rn-editor__rem__body--red {background-color: var(--re-dk);}
 .rn-editor__rem__body--orange {background-color: Var(--or-dk);} 
