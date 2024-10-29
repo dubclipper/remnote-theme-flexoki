@@ -47,19 +47,19 @@
 
 
 
-/*      ===== GENERAL =====       */
+/*          ##### GLOBALS #####         */
 
 
-/*     ----- Backgrounds -----     */
+/*          +++++ Backgrounds +++++      */
 
 .rn-clr-background-primary {background-color: var(--paper);}
 .dark .rn-clr-background-primary {background-color: var(--base);}
 
-.rn-clr-background-secondary, 
-.rn-clr-background-tertiary {background-color: var(--base-50)}
+.rn-clr-background-secondary {background-color: var(--base-50)}
+.dark .rn-clr-background-secondary {background-color: var(--base-950)}
 
-.dark .rn-clr-background-secondary, 
-.rn-clr-background-tertiary {background-color: var(--base-950)}
+.rn-clr-background-tertiary {background-color: var(--base-500);}
+.dark .rn-clr-background-tertiary {background-color: var(--base-600);}
 
 .rn-clr-background-accent,
 .rn-clr-background-overlay-light {background-color: var(--base-200);}
@@ -70,12 +70,16 @@
 .dark .rn-clr-background-light-accent {background-color: var(--base-850);}
 
 .rn-clr-background-inverse-primary {background-color: var(--base-900);}
+.dark .rn-clr-background-inverse-primary {background-color: var(--base-100);}
 
 .rn-clr-background-inverse-secondary {background-color: var(--base-850);}
+.dark .rn-clr-background-inverse-secondary {background-color: var(--base-150);}
 
 .rn-clr-background-warning {background-color: var(--or);}
+.dark .rn-clr-background-warning {background-color: var(--or-dk);}
 
 .rn-clr-background-light-warning {background-color: var(--ye);}
+.dark .rn-clr-background-light-warning {background-color: var(--ye-dk);}
 
 .rn-clr-background-elevation-5 {background-color: var(--base-50);} 
 .rn-clr-background-elevation-10 {background-color: var(--base-100);}
@@ -90,7 +94,18 @@
 .rn-clr-background-elevation-90 {background-color: var(--base-850);}
 .rn-clr-background-elevation-100 {background-color: var(--base-900);}
 
-
+.dark .rn-clr-background-elevation-5 {background-color: var(--base-950);} 
+.dark .rn-clr-background-elevation-10 {background-color: var(--base-900);}
+.dark .rn-clr-background-elevation-15 {background-color: var(--base-850);}
+.dark .rn-clr-background-elevation-20 {background-color: var(--base-800);}
+.dark .rn-clr-background-elevation-30 {background-color: var(--base-700);}
+.dark .rn-clr-background-elevation-40,
+.dark .rn-clr-background-elevation-50 {background-color: var(--base-600);}
+.dark .rn-clr-background-elevation-60 {background-color: var(--base-500);}
+.dark .rn-clr-background-elevation-70 {background-color: var(--base-300);}
+.dark .rn-clr-background-elevation-80 {background-color: var(--base-200);}
+.dark .rn-clr-background-elevation-90 {background-color: var(--base-150);}
+.dark .rn-clr-background-elevation-100 {background-color: var(--base-100);}
 
 .rn-clr-background-negative,
 .rn-clr-background-positive,
@@ -102,7 +117,7 @@
 .rn-clr-background-logo-color {background-color: lime;}
 
 
-/*     ----- Content -----     */
+/*          +++++ Content (Text) +++++      */
 
 .rn-clr-content-on-color,
 .rn-clr-content-primary {color: var(--base);}
@@ -135,27 +150,28 @@
 .rn-clr-content-second {color: hotpink}
 
 
-/*     ----- Borders -----     */
+/*          +++++ Borders +++++      */
 
 .rn-clr-border-selected,
-.rn-clr-border-opaque,
-.rn-clr-border-warning {border: solid 0.2rem var(--base-200);}
+.rn-clr-border-opaque {border-color: var(--base-200);}
+
+.rn-clr-border-warning {border-color: var(--base-200);}
 
 .rn-clr-border-state-disabled,
-.rn-clr-border-accent {border: solid 0.1rem var(--base-150);}
+.rn-clr-border-accent {border-color: var(--base-150);}
 
 .rn-clr-border-light-accent,
-.rn-clr-border-accent-light {border: solid 0.1rem var(--base-100);}
+.rn-clr-border-accent-light {border-color: var(--base-100);}
 
-
-.rn-clr-border-positive,
-.rn-clr-border-negative {border: dotted 0.5rem hotpink;}   /* Change when you know where these elements actually used */
 
 .rn-clr-border-inverse-opaque,
 .rn-clr-border-inverse-selected {border: solid 0.2rem var(--base-800);}
 
+.rn-clr-border-positive,
+.rn-clr-border-negative {border-color: hotpink;}   /* Change when you know where these elements actually used */
 
-/*     ----- Shadows -----     */
+
+/*          +++++ Shadows +++++      */
 
 .rn-clr-shadow-default,
 .rn-clr-shadow-modal,
@@ -178,28 +194,27 @@
 .rn-clr-shadow-elevation-50 {background-color: var(--base-500);}
 
 
-/*     ===== SIDEBAR =====     */
+/*          ##### SIDEBAR #####         */
 
 
 .rn-sidebar {
-    border-right: 0.5rem solid var(--base-100);
+    border-right: 0.2rem solid var(--base-100);
 }
 
-.rn-sidebar-add-button {
-    color: var(--or);
-}
+.rn-sidebar-add-button {color: var(--or);}
+.dark .rn-sidebar-add-button {color: var(--or-dk);}
+
 
 .rn-sidebar-add-button:hover {
-    border: 0.25em solid var(--base-150);
+    border: 0.15em solid var(--base-150);
 }
 
-.rn-sidebar-counter {
-    color: var(--pu);
-} 
+.rn-sidebar-counter {color: var(--pu);} 
+.dark .rn-sidebar-counter {color: var(--pu-dk);} 
 
 
+/*          ##### DOCUMENTS #####         */
 
-/*     ===== DOCUMENTS =====     */
 
 .rn-doc-title {
     font-family: "Playfair", serif;
@@ -208,8 +223,8 @@
 }
 
 
+/*          ##### EDITOR #####         */
 
-/*     ===== EDITOR =====     */
 
 .rn-editor__rem__body__text {
     font-family: "Montserrat", sans-serif;
@@ -221,8 +236,24 @@
     line-height: 1.6rem;
 }
 
+.dark .rn-editor__rem__body__text {
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-size: 1.2rem;
+    font-weight: normal;
+    font-style: normal;
+    color: var(--base-200);
+    line-height: 1.6rem;
+}
+
+
 .rn-rem-reference {
     color: var(--cy);
+    font-weight: 450;
+} 
+
+.dark .rn-rem-reference {
+    color: var(--cy-dk);
     font-weight: 450;
 } 
 
@@ -234,6 +265,12 @@
 .rn-quote-content {
     border-left: 0.5rem solid var(--gr);
     background-color: var(--base-150);
+    padding: 1em 3em 1em;
+    }
+
+.dark .rn-quote-content {
+    border-left: 0.5rem solid var(--gr);
+    background-color: var(--base-850);
     padding: 1em 3em 1em;
     }
 
@@ -281,4 +318,7 @@
 .dark .rn-editor__rem__body--blue {background-color: var(--bl);}
 .dark .rn-editor__rem__body--purple {background-color: var(--pu);}
 
-/*     ===== QUEUE =====     */
+
+/*          ##### QUEUE #####         */
+
+
