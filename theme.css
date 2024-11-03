@@ -298,24 +298,26 @@
 
 /*      ----- Headings -----        */
 
-.rn-editor__rem__body__text--h1 {
-    font-family: "Karla", sans-serif;
+.rn-editor__rem__body__text--h1,
+.dark .rn-editor__rem__body__text--h1 {
+    font-family: "Montaga", serif;
     font-size: 1.8rem;
     font-weight: normal;
     font-style: normal;
 }
 
-.rn-editor__rem__body__text--h2 {
-    font-family: "Karla", sans-serif;
-    font-optical-sizing: auto;
-    font-size: 1.5rem;
+.rn-editor__rem__body__text--h2,
+.dark rn-editor__rem__body__text--h2 {
+    font-family: "Montaga", serif;
+    font-size: 1.6rem;
     font-weight: normal;
     font-style: normal;
 }
 
-.rn-editor__rem__body__text--h3 {
-    font-family: "Karla", sans-serif;
-    font-size: 1.3rem;
+.rn-editor__rem__body__text--h3,
+.dark .rn-editor__rem__body__text--h3 {
+    font-family: "Montaga", serif;
+    font-size: 1.4rem;
     font-weight: bold;
     font-style: normal;
 }
