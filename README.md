@@ -13,14 +13,14 @@ I love the Montserrat font so that's the main font used, along with a healthy am
 
 I have built this theme with using a desktop or laptop in mind.  It seems to be working fine on mobile but I mainly just do flashcards there.  Anyway, let me know if you run into any issues via the github page!
 
-### Light Mode
+### 🔆 Light Mode 
 In Remnote, go to Settings>Interface and select "Light" under the General heading.
 
 ![Screenshot of theme in light mode](<theme light.png>)
 
 ![alt text](<theme light flashcard.png>)
 
-### Dark Mode
+### 🌙 Dark Mode 
 In Remnote, go to Settings>Interface and select "Dark" under the General heading.
 
 ![Screenshot of theme in dark mode](<theme dark.png>)
