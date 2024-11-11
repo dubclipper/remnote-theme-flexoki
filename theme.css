@@ -219,13 +219,14 @@
 
 
 .rn-doc-title {
-    font-family: "Playfair", serif;
-    font-weight: normal;
+    font-family: "Montaga", serif;
+    font-size: 2rem;
+    font-weight: bold;
     font-style: normal;
 }
 
 .rn-doc-header {border-bottom: 0.1rem solid var(--base-100);} 
-
+.dark .rn-doc-header {border-bottom: 0.1rem solid var(--base-900);} 
 
 
 /*          ##### EDITOR #####         */
@@ -259,12 +260,14 @@
     font-weight: 500;
 } 
 
+.basic_card_rem_type {color: var(--bl);} 
+
 .concept_rem_type {
     color: var(--gr);
     font-weight: 500;
 }
-.dark .concept_rem_type {
-    color: var(--gr-dk);
+.concept_rem_type {
+    color: var(--gr);
     font-weight: 500;
 }
 
@@ -272,12 +275,12 @@
 .dark .rn-card-delimiter {color: var(--base-500);}
 
 .rn-quote-content {
-    border-left: 0.5rem solid var(--gr);
+    border-left: 0.5rem solid var(--ye);
     background-color: var(--base-150);
     padding: 1em 3em 1em;
     }
 .dark .rn-quote-content {
-    border-left: 0.5rem solid var(--gr);
+    border-left: 0.5rem solid var(--ye-dk);
     background-color: var(--base-850);
     padding: 1em 3em 1em;
     }
@@ -301,15 +304,15 @@
 .rn-editor__rem__body__text--h1,
 .dark .rn-editor__rem__body__text--h1 {
     font-family: "Montaga", serif;
-    font-size: 1.8rem;
+    font-size: 1.7rem;
     font-weight: normal;
     font-style: normal;
 }
 
 .rn-editor__rem__body__text--h2,
-.dark rn-editor__rem__body__text--h2 {
+.dark .rn-editor__rem__body__text--h2 {
     font-family: "Montaga", serif;
-    font-size: 1.6rem;
+    font-size: 1.55rem;
     font-weight: normal;
     font-style: normal;
 }
