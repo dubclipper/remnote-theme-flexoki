@@ -2,8 +2,6 @@
 
 
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Playfair:ital,opsz,wght@0,5..1200,300..900;1,5..1200,300..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montaga&display=swap');
 
 
@@ -114,7 +112,7 @@
 .rn-clr-background-state-disabled,
 .rn-clr-background-always-dark,
 .rn-clr-background-always-light,
-.rn-clr-background-logo-color {background-color: lime;}
+.rn-clr-background-logo-color {background-color: lime;}     /* Change when you know where these elements actually used */
 
 
 /*          +++++ Content (Text) +++++      */
@@ -147,7 +145,7 @@
 .rn-clr-content-negative,
 .rn-clr-content-positive,
 .rn-clr-content-logo-color,
-.rn-clr-content-second {color: hotpink;}
+.rn-clr-content-second {color: hotpink;}     /* Change when you know where these elements actually used */
 
 
 /*          +++++ Borders +++++      */
